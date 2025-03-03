@@ -3,17 +3,17 @@ import { Button } from "@/components/ui/button"
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-cyan-500">
       {/* Navigation */}
       <header className="fixed top-0 w-full border-b border-gray-200 bg-white/50 backdrop-blur-xl z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-10">
             <div className="flex items-center">
               <Link 
                 href="/" 
                 className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-pink-600 bg-clip-text text-transparent hover:opacity-80 transition-all duration-300"
               >
-                WMS
+                Wardrobe Management System
               </Link>
             </div>
             <div className="flex items-center space-x-4">
@@ -34,15 +34,12 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <main className="flex-1">
+      <main className="flex-1 pt-24">
         <div className="relative">
           {/* Background decoration */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf6,#ec4899)] opacity-40" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,white_100%)] opacity-90" />
-            <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-              <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-violet-600 to-pink-600 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
-            </div>
           </div>
 
           {/* Hero content */}

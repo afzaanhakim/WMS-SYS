@@ -22,6 +22,10 @@ export function UserNav({ user }: { user: any }) {
     .join("")
     .toUpperCase()
 
+  const handleLogout = async () => {
+    await signOut({ callbackUrl: "/" })
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -61,7 +65,7 @@ export function UserNav({ user }: { user: any }) {
         <DropdownMenuSeparator />
         <DropdownMenuItem
           className="cursor-pointer text-red-600 focus:text-red-600"
-          onClick={() => signOut({ callbackUrl: "/" })}
+          onClick={handleLogout}
         >
           Log out
         </DropdownMenuItem>

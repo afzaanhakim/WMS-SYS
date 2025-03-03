@@ -11,7 +11,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen relative flex flex-col items-center justify-center p-4">
       {/* Animated background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf6,#ec4899)] opacity-30" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,white_100%)] opacity-90" />
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">

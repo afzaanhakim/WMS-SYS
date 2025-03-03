@@ -12,4 +12,5 @@ if (process.env.NODE_ENV === "production") {
     global.cachedPrisma = new PrismaClient()
   }
   db = global.cachedPrisma
+  
 } 
